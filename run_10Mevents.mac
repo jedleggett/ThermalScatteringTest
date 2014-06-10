@@ -1,0 +1,6 @@
+/control/execute beam_1Mev.mac
+
+#/ThermalScatteringTest/run/setFileName paraH2_10Mevents
+/ThermalScatteringTest/run/setFileName H20_10Mevents
+
+/run/beamOn 10000000

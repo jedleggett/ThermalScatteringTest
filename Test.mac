@@ -1,0 +1,10 @@
+/control/execute beam_1Mev.mac
+
+# Set filename for Output (FileType automatically appended)
+/ThermalScatteringTest/run/setFileName Test
+#/ThermalScatteringTest/run/setFileName Test_100K
+
+# Do Run
+#/run/beamOn 100000
+#/run/beamOn 80000
+/run/beamOn 1000
