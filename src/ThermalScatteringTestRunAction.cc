@@ -47,6 +47,7 @@ ThermalScatteringTestRunAction::ThermalScatteringTestRunAction()
     
     // Set correct normalization for energy spectrum
     G4double HighEdge, LowEdge, Middle, Width;
+    // Should I be using cons_iterator, or just iterator
     std::vector<G4double>::const_iterator it;
     for (it = Edges.begin(); it != (Edges.end()-1); it++ )
     {
