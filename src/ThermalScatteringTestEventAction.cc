@@ -11,7 +11,7 @@
 
 ThermalScatteringTestEventAction::ThermalScatteringTestEventAction()
  : G4UserEventAction(),
-fPrintModulo(1000)
+fPrintModulo(10000)
 {
 }
 
