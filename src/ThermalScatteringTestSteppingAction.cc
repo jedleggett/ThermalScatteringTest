@@ -22,13 +22,15 @@ ThermalScatteringTestSteppingAction::~ThermalScatteringTestSteppingAction()
 
 void ThermalScatteringTestSteppingAction::UserSteppingAction(const G4Step* step)
 {
-    
+
+#if 0
     G4double time = step->GetPreStepPoint()->GetGlobalTime();
-    if (time>1000*s) {
+    if (time>10000*s) {
         step->GetTrack()->SetTrackStatus(fStopAndKill);
         G4cout << "******Here*****" << G4endl;
         step->GetTrack()->GetDynamicParticle()->DumpInfo();
     }
+#endif
     
     // Kill tracks at first step for analyzing input
 #if 0

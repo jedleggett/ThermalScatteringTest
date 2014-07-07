@@ -25,6 +25,11 @@ void ThermalScatteringTestEventAction::BeginOfEventAction(const G4Event* evt)
   if ( eventID % fPrintModulo == 0 )  {
     G4cout << "\n---> Begin of event: " << eventID << G4endl;
   }
+    
+    //if (eventID==924436) {
+    if (eventID==810985) {
+        G4cout << "This Guy!!!" << G4endl;
+    }
 }
 
 void ThermalScatteringTestEventAction::EndOfEventAction(const G4Event* evt)
