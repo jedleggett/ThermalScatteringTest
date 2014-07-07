@@ -5,6 +5,6 @@
 #/ThermalScatteringTest/run/setFileName Test_100K
 
 # Do Run
-/run/beamOn 1000000
+/run/beamOn 10000
 #/run/beamOn 80000
 #/run/beamOn 8000

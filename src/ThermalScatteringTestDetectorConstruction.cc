@@ -44,7 +44,7 @@ void ThermalScatteringTestDetectorConstruction::DefineMaterials()
     nistManager->FindOrBuildMaterial("G4_Galactic");
     //nistManager->FindOrBuildMaterial("G4_lH2");
     //nistManager->FindOrBuildMaterial("G4_WATER");
-    //nistManager->FindOrBuildMaterial("G4_GRAPHITE");
+    nistManager->FindOrBuildMaterial("G4_GRAPHITE");
     //nistManager->FindOrBuildMaterial("G4_POLYETHYLENE");
     
     
@@ -74,8 +74,10 @@ G4VPhysicalVolume* ThermalScatteringTestDetectorConstruction::DefineVolumes()
     // Get Material pointers
     G4Material* worldMaterial = G4Material::GetMaterial("G4_Galactic");
     //G4Material* targetMaterial = G4Material::GetMaterial("G4_lH2");
-    G4Material* targetMaterial = G4Material::GetMaterial("TS_lH2");
+    //G4Material* targetMaterial = G4Material::GetMaterial("TS_lH2");
     //G4Material* targetMaterial = G4Material::GetMaterial("G4_WATER");
+    G4Material* targetMaterial = G4Material::GetMaterial("G4_GRAPHITE");
+    //G4Material* targetMaterial = G4Material::GetMaterial("G4_POLYETHYLENE");
 
     //
     // World
