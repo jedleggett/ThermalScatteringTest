@@ -1,0 +1,5 @@
+/control/execute beam_1Mev.mac
+
+/ThermalScatteringTest/run/setFileName graphite_1Mevents
+
+/run/beamOn 1000000
