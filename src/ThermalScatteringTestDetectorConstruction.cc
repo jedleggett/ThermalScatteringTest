@@ -43,13 +43,13 @@ void ThermalScatteringTestDetectorConstruction::DefineMaterials()
     // Define needed Nist Materials
     nistManager->FindOrBuildMaterial("G4_Galactic");
     //nistManager->FindOrBuildMaterial("G4_lH2");
-    nistManager->FindOrBuildMaterial("G4_WATER");
+    //nistManager->FindOrBuildMaterial("G4_WATER");
     //nistManager->FindOrBuildMaterial("G4_GRAPHITE");
-    //nistManager->FindOrBuildMaterial("G4_POLYETHYLENE");
+    nistManager->FindOrBuildMaterial("G4_POLYETHYLENE");
     
     
     // Create materials from ground up
-    G4String name, symbol;          // a=mass of a mole;
+    /*G4String name, symbol;          // a=mass of a mole;
     G4double a, z, density;         // z=mean number of protons;
     
     G4int ncomponents, natoms;
@@ -60,7 +60,7 @@ void ThermalScatteringTestDetectorConstruction::DefineMaterials()
     
     G4Material* matH1 = new G4Material("TS_lH2", density=0.0708*g/cm3, ncomponents=1, kStateLiquid, temperature=20*kelvin, pressure=STP_Pressure);
     matH1->AddElement(elH1, natoms=1);
-    
+    */
 }
 
 G4VPhysicalVolume* ThermalScatteringTestDetectorConstruction::DefineVolumes()
@@ -75,9 +75,9 @@ G4VPhysicalVolume* ThermalScatteringTestDetectorConstruction::DefineVolumes()
     G4Material* worldMaterial = G4Material::GetMaterial("G4_Galactic");
     //G4Material* targetMaterial = G4Material::GetMaterial("G4_lH2");
     //G4Material* targetMaterial = G4Material::GetMaterial("TS_lH2");
-    G4Material* targetMaterial = G4Material::GetMaterial("G4_WATER");
+    //G4Material* targetMaterial = G4Material::GetMaterial("G4_WATER");
     //G4Material* targetMaterial = G4Material::GetMaterial("G4_GRAPHITE");
-    //G4Material* targetMaterial = G4Material::GetMaterial("G4_POLYETHYLENE");
+    G4Material* targetMaterial = G4Material::GetMaterial("G4_POLYETHYLENE");
 
     //
     // World
